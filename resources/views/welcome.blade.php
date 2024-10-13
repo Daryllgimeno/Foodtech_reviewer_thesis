@@ -15,19 +15,30 @@
 
         <!-- Styles -->
         <style>
+            body {
+            background-image: url('Homepage.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            }
+
             nav {
-                position: absolute;
-                top: 20px;
-                right: 10px;
-                margin-right: 80px;
+            position: absolute;
+            top: 20px;
+            right: 10px;
+            margin-right: 80px;
             }
 
             nav a {
-                margin-right: 20px;
+            margin-right: 20px;
             }
+
             .btn + .btn {
-                margin-left: 10px;
-                margin-right: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
             }
         </style>
 
