@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: laravel-app
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+    ports:
+      - "8000:8000"  # Laravel app port
+    networks:
+      - app-network
+
+  vite:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vite-app
+    working_dir: /var/www
+    volumes:
+      - .:/var/www
+    ports:
+      - "5173:5173"  # Vite default dev server port
+    networks:
+      - app-network
+    environment:
+      - NODE_ENV=development
+    command: npm run dev  # Run Vite in development mode
+
+networks:
+  app-network:
+    driver: bridge
