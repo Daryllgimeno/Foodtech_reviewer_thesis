@@ -22,3 +22,5 @@ Route::get('/student', function () {
 Route::get('/faculty', function () {
     return view('faculty');
 });
+
+
