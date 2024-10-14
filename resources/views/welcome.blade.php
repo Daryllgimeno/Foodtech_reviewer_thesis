@@ -16,7 +16,7 @@
         <!-- Styles -->
         <style>
             body {
-            background-image: url('Homepage.png');
+            background-image: url('Dashboardpage.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -51,7 +51,7 @@
         </nav>
 
         <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-            <a href="student" class="btn btn-success btn-lg mx-2">Student</a>
+            <a href="login" class="btn btn-success btn-lg mx-2">Student</a>
             <a href="faculty" class="btn btn-success btn-lg mx-2">Faculty</a>
         </div>
 
