@@ -10,6 +10,3 @@ Route::get('/', function () {
 });
 
 
-Route::get('faculty', function () {
-    return view('faculty');
-})->middleware(['auth', 'verified'])->name('faculty');

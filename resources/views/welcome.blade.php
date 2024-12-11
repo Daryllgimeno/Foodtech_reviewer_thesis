@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <style>
         body {
@@ -25,6 +26,7 @@
             top: 20px;
             right: 20px;
         }
+        
 
         nav a {
             margin-right: 15px;
@@ -32,6 +34,7 @@
 
         .btn + .btn {
             margin-left: 10px;
+
         }
 
         .content {
