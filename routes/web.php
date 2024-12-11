@@ -1,15 +1,16 @@
 <?php
-
-
-
-
 use Illuminate\Support\Facades\Route;
 
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
+route::get('/about', function(){
+    return view('about');
+});
 
-Route::get('faculty', function () {
-    return view('faculty');
-})->middleware(['auth', 'verified'])->name('faculty');
+route::get('/contact', function(){
+    return view('contact');
+});
+
