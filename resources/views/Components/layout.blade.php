@@ -26,7 +26,7 @@
             top: 20px;
             right: 20px;
         }
-        
+
 
         nav a {
             margin-right: 15px;
@@ -61,18 +61,15 @@
 </head>
 <body>
     <nav>
-        <a href="about" class="btn btn-outline-light">About</a>
-        <a href="contact" class="btn btn-outline-light">Contact Us</a>
+        <a href="/" class="btn btn-outline-light">Home</a>
+        <a href="/about" class="btn btn-outline-light">About</a>
+        <a href="/contact" class="btn btn-outline-light">Contact Us</a>
     </nav>
 
-    <div class="content">
-        <h1>Food Technology Reviewer</h1>
-        <p>Your gateway to mastering food technology concepts and board exam preparation.</p>
-        <div>
-            <a href="login" class="btn btn-primary">Login as Student</a>
-            <a href="faculty" class="btn btn-secondary">Login as Faculty</a>
-        </div>
-    </div>
+
+
+<?php echo $slot ?>
+
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
